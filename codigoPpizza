@@ -1,0 +1,19 @@
+curl -X POST -H "Content-Type: application/json" -d '{
+	"get_started": {"payload":
+		"GET_STARTED_PUGPIZZA"
+	}
+}' "https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAAFhwpc3YyABALr0pZCsfTCipI6WtegRlwdOxg6MtYY5qxnPGJmaOQpDd530a9PcGGxZBKBy5GjJ7T2JgPkJhhtEjbEEojNL71fo3KfZBDETm9t2qjq9beNzKvqwlCDlvhrCaBES31K12PqHlZAYxUtHEiZBgCGk7crXjFXjH7P5LU3kMMpAb28zMxWmWZAHAZD"
+
+curl -X POST -H "Content-Type: application/json" -d '{
+	"greeting": [
+		{
+			"locale": "default",
+			"text": "Hola {{user_first_name}}, Soy PugPizza y te recomiendo las mejores pizzas"
+		},
+		{
+			"locale": "en_US"
+			"text": "Hi {{user_first_name}}"
+		}
+	]
+}' "https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAAFhwpc3YyABALr0pZCsfTCipI6WtegRlwdOxg6MtYY5qxnPGJmaOQpDd530a9PcGGxZBKBy5GjJ7T2JgPkJhhtEjbEEojNL71fo3KfZBDETm9t2qjq9beNzKvqwlCDlvhrCaBES31K12PqHlZAYxUtHEiZBgCGk7crXjFXjH7P5LU3kMMpAb28zMxWmWZAHAZD"
+

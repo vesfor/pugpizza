@@ -1,0 +1,110 @@
+curl -X POST -H "Content-Type: application/json" -d '{
+  "get_started": {"payload": "GET_STARTED_PUGPIZZA"}
+}
+
+
+curl - X POST - H "Content-Type: application/json" - d '{
+"persistent_menu": [
+{
+	"locale": "default",
+	"composer_input_disabled": false,
+	"call_to_actions": [
+		{
+			"title": "PugPizza",
+			"type": "nested",
+			"call_to_actions": [
+				{
+					"title": "Acerca",
+					"type": "postback",
+					"payload": "ABOUT_PAYLOAD"
+				}
+			]
+		},
+		{
+			"title": "Menu de productos",
+			"type": "nested",
+			"call_to_actions": [
+			{
+				"title": "Pizzas",
+				"type": "postback",
+				"payload": "PIZZAS_PAYLOAD"
+			}
+			]
+		},
+		{
+			"type": "web_url",
+			"title": "Pagina Web",
+			"url": "https://platzi.com/",
+			"webview_height_ratio": "full"
+		}
+	]
+}
+]
+}
+' "https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAAFhwpc3YyABAH9jxJ53LijWCwbMjmw92ljr7hntCnEoB6ZAiJMs9VeLzGz9CUtq76cMX0nH4QObc1NR457aNFjsLcUnF26N0PsmLWboOqPI3qa1X8zZC3MAOQsU2R0FTvTbzvZA9AijANSxgB21VBuvwtW0HVuutFduOTeroiQ8f4WFmiB3BiCgeCdji0ZD"
+
+
+curl -X POST -H "Content-Type: application/json" -d '{
+"persistent_menu": [{
+  "locale": "default",
+  "composer_input_disabled": false,
+  "call_to_actions": [{
+      "title": "PugPizza ",
+      "type": "nested",
+      "call_to_actions": [{
+          "title": "Acerca",
+          "type": "postback",
+          "payload": "ABOUT_PAYLOAD"
+        },
+        {
+        	"title": "Sucursales",
+        	"type": "postback",
+        	"payload": "SUCURSALES_PAYLOAD"
+        },
+        {
+        	"title": "Contacto",
+        	"type": "postback",
+        	"payload": "CONTACT_PAYLOAD"
+        },
+        {
+        	"title": "Ayuda",
+        	"type": "postback",
+        	"payload": "HELP_PAYLOAD"
+        }
+      ]
+    },
+    {
+      "title": "Menu de Productos",
+      "type": "nested",
+      "call_to_actions": [{
+          "title": "Pizzas",
+          "type": "postback",
+          "payload": "PIZZAS_PAYLOAD"
+        },
+        {
+        	"title": "Especialidades",
+        	"type": "postback",
+        	"payload": "SPECIAL_PAYLOAD"
+        },
+        {
+        	"title": "Bebidas",
+        	"type": "postback",
+        	"payload": "DRINK_PAYLOAD"
+        },
+        {
+        	"title": "Promociones",
+        	"type": "postback",
+        	"payload": "PROMO_PAYLOAD"
+        }
+      ]
+    },
+    {
+      "type": "web_url",
+      "title": "Pagina Web",
+      "url": "http://platzi.com/bots-messenger/",
+      "webview_height_ratio": "full"
+    }
+  ]
+}]
+}
+' "https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAAFhwpc3YyABAILLGtKE0qTyM0ZCRb7S2KoluqrsLVKUZCZAaisYGhqJ0KarlHcNMljQSoe2ZAkj2K78PyrvboR2vKYJxMcXnlDyLJfIJo5ZCK1Bb1ve4xTqy52z4po3B5uUC3SjjAFpA5BuTQq6FFJCchG1Stbw08yB7hnWG8ThpyxdfG43ZCADHa2jw9Ek0ZD"
