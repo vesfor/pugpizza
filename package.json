@@ -1,10 +1,10 @@
 {
-  "name": "pugpizza",
+  "name": "pugpizza1",
   "version": "1.0.0",
   "description": "bot de messenger para nuestra pizzeria",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
   "author": "vespaciano forero <veforero@gmail.com>",
@@ -16,8 +16,8 @@
   },
   "devDependencies": {
     "nodemon": "^1.18.11"
-  }
-  "engines": {
+  },
+ "engines": {
   	"node": "8.9.1"
   }
 }
